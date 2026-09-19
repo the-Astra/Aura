@@ -344,7 +344,7 @@ function SMODS.create_mod_badges(obj, badges)
 		return true
 	end
     for i = 1, #badges do
-		if eq_col(badges[i].nodes[1].config.colour, HEX("3469ab")) then
+		if badges[i].nodes[1].config.colour and eq_col(badges[i].nodes[1].config.colour, HEX("3469ab")) then
             Our_badge = i
 			break
 		end
